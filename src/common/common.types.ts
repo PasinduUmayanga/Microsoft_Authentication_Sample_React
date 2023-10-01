@@ -8,4 +8,5 @@ export interface AppOptions {
   ClientId?: string;
   RedirectUri?: string;
   CommonWindowType?: string;
+  Scopes: Array<string>;
 }

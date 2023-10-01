@@ -10,15 +10,15 @@ import { EnumLoginWindowType } from "../../../common/common.enum";
 
 export const loginWithAzureApi = async () => {
   // Get app option(s) from env file
-  const AppOptions: AppOptions = GetAppOptions();
+  const appOptions: AppOptions = GetAppOptions();
 
   try {
     // MSAL config for authenticating
     const msalConfig = {
       auth: {
-        clientId: AppOptions.ClientId,
-        authority: `https://login.microsoftonline.com/${AppOptions.TenantId}`,
-        redirectUri: AppOptions.RedirectUri,
+        clientId: appOptions.ClientId,
+        authority: `https://login.microsoftonline.com/${appOptions.TenantId}`,
+        redirectUri: appOptions.RedirectUri,
       },
       cache: {
         cacheLocation: "sessionStorage", // Use sessionStorage for token caching
@@ -54,7 +54,7 @@ export const loginWithAzureApi = async () => {
     await msalInstance.initialize();
     console.log(msalInstance.getActiveAccount());
     msalInstance
-      .loginPopup()
+      .loginPopup({ scopes: appOptions.Scopes })
       .then((response: AuthenticationResult) => {
         debugger;
       })

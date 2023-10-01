@@ -2,7 +2,7 @@ import { EnumLoginWindowType } from "./common.enum";
 import { AppOptions } from "./common.types";
 
 export const GetAppOptions = (): AppOptions => {
-  let AppOptions: AppOptions = {
+  let appOptions: AppOptions = {
     Version: process.env.REACT_APP_VERSION,
     Environment: process.env.REACT_APP_ENV,
     APIURL: process.env.REACT_APP_API_BASE_URL,
@@ -10,7 +10,8 @@ export const GetAppOptions = (): AppOptions => {
     ClientId: process.env.REACT_APP_CLIENT_ID,
     RedirectUri: process.env.REACT_APP_REDIRECTURI,
     CommonWindowType: process.env.REACT_APP_LOGIN_WINDOW_TYPE,
+    Scopes: process.env["REACT_APP_SCOPES"]?.split(",") as Array<string>,
   };
 
-  return AppOptions;
+  return appOptions;
 };
