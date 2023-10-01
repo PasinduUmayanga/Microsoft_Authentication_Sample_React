@@ -1,7 +1,7 @@
 {
   "homepage": "https://PasinduUmayanga.github.io/Microsoft_Authentication_Sample_React",
   "name": "microsoft_authentication_sample-react-type-script",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "dependencies": {
     "@azure/msal-browser": "^3.1.0",
