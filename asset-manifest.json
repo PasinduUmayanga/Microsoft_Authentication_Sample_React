@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Microsoft_Authentication_Sample_React/static/css/main.073c9b0a.css",
-    "main.js": "/Microsoft_Authentication_Sample_React/static/js/main.9c9f3343.js",
+    "main.js": "/Microsoft_Authentication_Sample_React/static/js/main.fa859064.js",
     "static/js/787.93052a2c.chunk.js": "/Microsoft_Authentication_Sample_React/static/js/787.93052a2c.chunk.js",
     "index.html": "/Microsoft_Authentication_Sample_React/index.html",
     "main.073c9b0a.css.map": "/Microsoft_Authentication_Sample_React/static/css/main.073c9b0a.css.map",
-    "main.9c9f3343.js.map": "/Microsoft_Authentication_Sample_React/static/js/main.9c9f3343.js.map",
+    "main.fa859064.js.map": "/Microsoft_Authentication_Sample_React/static/js/main.fa859064.js.map",
     "787.93052a2c.chunk.js.map": "/Microsoft_Authentication_Sample_React/static/js/787.93052a2c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.9c9f3343.js"
+    "static/js/main.fa859064.js"
   ]
 }
