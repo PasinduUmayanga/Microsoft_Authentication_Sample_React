@@ -1,5 +1,14 @@
-# Getting Started with Create React App
-https://pasinduumayanga.github.io/Microsoft_Authentication_Sample_React/
+# Microsoft Authentication Sample React
+
+[![Build status](https://ci.appveyor.com/api/projects/status/github/PasinduUmayanga/Microsoft_Authentication_Sample_React?branch=main&svg=true)](https://ci.appveyor.com/project/PasinduUmayanga/microsoft-authentication-sample-react/branch/main)
+[![Build History](https://img.shields.io/badge/AppVeyor-Build%20History-blue?logo=appveyor)](https://ci.appveyor.com/project/PasinduUmayanga/microsoft-authentication-sample-react/history)
+[![Web on GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Web-222222?logo=githubpages&logoColor=white)](https://pasinduumayanga.github.io/Microsoft_Authentication_Sample_React/)
+![Node.js](https://img.shields.io/badge/Node.js-20-339933?logo=node.js&logoColor=white)
+![npm](https://img.shields.io/badge/npm-package%20manager-CB3837?logo=npm&logoColor=white)
+![React](https://img.shields.io/badge/React-18.2-61DAFB?logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-4.9-3178C6?logo=typescript&logoColor=white)
+[![Last commit](https://img.shields.io/github/last-commit/PasinduUmayanga/Microsoft_Authentication_Sample_React)](https://github.com/PasinduUmayanga/Microsoft_Authentication_Sample_React/commits/main)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

@@ -2,13 +2,27 @@ version: 1.0.{build}
 
 image: Visual Studio 2022
 
+branches:
+  except:
+    - gh-pages
+
+skip_commits:
+  files:
+    - README.md
+    - docs/*
+    - docs/**/*
+    - .github/*
+    - .github/**/*
+    - .gitignore
+    - .gitattributes
+
 environment:
   nodejs_version: "20"
   CI: true
 
 install:
   - ps: Install-Product node $env:nodejs_version
-  - npm install
+  - npm install --prefer-offline --no-audit
 
 test_script:
   - npm test -- --watchAll=false --runInBand --passWithNoTests
@@ -20,5 +34,15 @@ artifacts:
   - path: build
     name: react-build
 
+notifications:
+  - provider: Email
+    to:
+      - '{{commitAuthorEmail}}'
+    subject: 'Build {{status}}: {{projectName}} {{buildVersion}}'
+    on_build_success: false
+    on_build_failure: true
+    on_build_status_changed: true
+
 cache:
-  - '%APPDATA%\npm-cache'
+  - '%LOCALAPPDATA%\npm-cache -> package.json, package-lock.json'
+  - node_modules -> package.json, package-lock.json
