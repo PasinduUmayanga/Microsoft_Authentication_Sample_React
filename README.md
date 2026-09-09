@@ -1,6 +1,6 @@
 # Microsoft Authentication Sample React
 
-[![Build status](https://ci.appveyor.com/api/projects/status/github/PasinduUmayanga/Microsoft_Authentication_Sample_React?branch=main&svg=true)](https://ci.appveyor.com/project/PasinduUmayanga/microsoft-authentication-sample-react/branch/main)
+[![Build status](https://ci.appveyor.com/api/projects/status/ih3d44m2vb2vgmnb?svg=true)](https://ci.appveyor.com/project/Mahadenamuththa/microsoft-authentication-sample-react)
 [![Build History](https://img.shields.io/badge/AppVeyor-Build%20History-blue?logo=appveyor)](https://ci.appveyor.com/project/PasinduUmayanga/microsoft-authentication-sample-react/history)
 [![Web on GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Web-222222?logo=githubpages&logoColor=white)](https://pasinduumayanga.github.io/Microsoft_Authentication_Sample_React/)
 ![Node.js](https://img.shields.io/badge/Node.js-20-339933?logo=node.js&logoColor=white)
