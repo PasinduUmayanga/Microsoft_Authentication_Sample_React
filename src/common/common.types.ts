@@ -1,5 +1,3 @@
-import { EnumLoginWindowType } from "./common.enum";
-
 export interface AppOptions {
   Version?: string;
   Environment?: string;

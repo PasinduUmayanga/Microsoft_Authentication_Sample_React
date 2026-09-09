@@ -6,7 +6,6 @@ import {
 } from "@azure/msal-browser";
 import { GetAppOptions } from "../../../common/commom.functions";
 import { AppOptions } from "../../../common/common.types";
-import { EnumLoginWindowType } from "../../../common/common.enum";
 
 export const loginWithAzureApi = async () => {
   // Get app option(s) from env file

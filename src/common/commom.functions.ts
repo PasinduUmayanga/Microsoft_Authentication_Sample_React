@@ -1,4 +1,3 @@
-import { EnumLoginWindowType } from "./common.enum";
 import { AppOptions } from "./common.types";
 
 export const GetAppOptions = (): AppOptions => {
