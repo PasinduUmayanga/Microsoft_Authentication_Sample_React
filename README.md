@@ -9,7 +9,36 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-4.9-3178C6?logo=typescript&logoColor=white)
 [![Last commit](https://img.shields.io/github/last-commit/PasinduUmayanga/Microsoft_Authentication_Sample_React)](https://github.com/PasinduUmayanga/Microsoft_Authentication_Sample_React/commits/main)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Microsoft Authentication Sample React is a small TypeScript React application that demonstrates Microsoft Entra ID authentication with the Microsoft Authentication Library (MSAL). The app renders a single login page with an Azure sign-in button, reads authentication settings from `REACT_APP_*` environment variables, opens the Microsoft login flow with `loginPopup`, and requests access tokens with `acquireTokenPopup`.
+
+The project is built with Create React App and is configured for GitHub Pages deployment.
+
+## Project Structure
+
+- `src/App.tsx` renders the login page as the main application view.
+- `src/view/pages/Login/Login.tsx` contains the login button UI and delegates authentication to the login API module.
+- `src/view/pages/Login/Login.api.ts` configures MSAL, initializes `PublicClientApplication`, starts the popup login flow, and requests Microsoft Graph-related scopes.
+- `src/common/commom.functions.ts` maps environment variables into the app configuration object.
+- `src/common/common.types.ts` defines the shared `AppOptions` shape.
+- `src/common/common.enum.ts` defines supported login window modes.
+- `.env.development` contains local development configuration values for the Azure tenant, client ID, redirect URI, and scopes.
+
+## Environment Variables
+
+Create React App exposes variables that start with `REACT_APP_`. This project uses:
+
+- `REACT_APP_VERSION`
+- `REACT_APP_ENV`
+- `REACT_APP_API_BASE_URL`
+- `REACT_APP_TENANT_ID`
+- `REACT_APP_CLIENT_ID`
+- `REACT_APP_LOGIN_WINDOW_TYPE`
+- `REACT_APP_REDIRECTURI`
+- `REACT_APP_SCOPES`
+
+## CI
+
+AppVeyor is configured through `appveyor.yml` to install dependencies, run tests, build the app, cache npm dependencies, skip documentation-only builds, and publish the `build` folder as an artifact.
 
 ## Available Scripts
 
