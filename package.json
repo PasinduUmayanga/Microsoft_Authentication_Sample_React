@@ -24,7 +24,8 @@
     "start": "react-scripts start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "build": "react-scripts build",
+    "update-browserslist-db": "npx update-browserslist-db@latest",
+    "build": "npm run update-browserslist-db && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
