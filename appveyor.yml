@@ -1,0 +1,24 @@
+version: 1.0.{build}
+
+image: Visual Studio 2022
+
+environment:
+  nodejs_version: "20"
+  CI: true
+
+install:
+  - ps: Install-Product node $env:nodejs_version
+  - npm install
+
+test_script:
+  - npm test -- --watchAll=false --runInBand --passWithNoTests
+
+build_script:
+  - npm run build
+
+artifacts:
+  - path: build
+    name: react-build
+
+cache:
+  - '%APPDATA%\npm-cache'
