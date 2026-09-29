@@ -1,50 +1,46 @@
 {
-  "homepage": "https://PasinduUmayanga.github.io/Microsoft_Authentication_Sample_React",
   "name": "microsoft_authentication_sample-react-type-script",
-  "version": "0.2.0",
   "private": true,
+  "version": "0.2.0",
+  "type": "module",
+  "homepage": "https://PasinduUmayanga.github.io/Microsoft_Authentication_Sample_React",
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint .",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
   "dependencies": {
-    "@azure/msal-browser": "^3.1.0",
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.5.2",
-    "@types/node": "^16.18.55",
-    "@types/react": "^18.2.24",
-    "@types/react-dom": "^18.2.8",
-    "dotenv-cli": "^7.3.0",
-    "gh-pages": "^6.0.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "typescript": "^4.9.5",
-    "web-vitals": "^2.1.4"
+    "@azure/msal-browser": "^5.23.0",
+    "@azure/msal-react": "^5.7.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "web-vitals": "^6.2.2"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "update-browserslist-db": "npx update-browserslist-db@latest",
-    "build": "npm run update-browserslist-db && react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "overrides": {
-    "react-scripts": {
-      "@svgr/webpack": "^8.1.0"
-    },
-    "postcss-svgo": {
-      "svgo": "^2.8.4"
-    }
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "@eslint/js": "^10.0.1",
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.3",
+    "@testing-library/user-event": "^14.6.7",
+    "@types/node": "^22.20.4",
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "@vitejs/plugin-react": "^6.1.1",
+    "eslint": "^10.11.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.7",
+    "gh-pages": "^6.3.0",
+    "globals": "^17.12.0",
+    "jsdom": "^29.1.1",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.71.0",
+    "vite": "^8.3.1",
+    "vitest": "^5.0.2"
   },
   "browserslist": {
     "production": [

@@ -5,6 +5,5 @@ export interface AppOptions {
   TenantId?: string;
   ClientId?: string;
   RedirectUri?: string;
-  CommonWindowType?: string;
   Scopes: Array<string>;
 }

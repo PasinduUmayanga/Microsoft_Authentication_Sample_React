@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "MSAL Sample",
+  "name": "Microsoft Authentication Sample React",
   "icons": [
     {
       "src": "favicon.ico",
