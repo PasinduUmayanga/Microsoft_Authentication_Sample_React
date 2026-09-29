@@ -17,7 +17,7 @@ skip_commits:
     - .gitattributes
 
 environment:
-  nodejs_version: "20"
+  nodejs_version: "22"
   CI: true
 
 install:
@@ -26,13 +26,13 @@ install:
   - npm install --prefer-offline --no-audit
 
 test_script:
-  - npm test -- --watchAll=false --runInBand --passWithNoTests
+  - npm test
 
 build_script:
   - npm run build
 
 artifacts:
-  - path: build
+  - path: dist
     name: react-build
 
 notifications:

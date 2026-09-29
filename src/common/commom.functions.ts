@@ -1,15 +1,18 @@
 import { AppOptions } from "./common.types";
 
+// Vite exposes only VITE_-prefixed variables on import.meta.env (see src/vite-env.d.ts).
 export const GetAppOptions = (): AppOptions => {
-  let appOptions: AppOptions = {
-    Version: process.env.REACT_APP_VERSION,
-    Environment: process.env.REACT_APP_ENV,
-    APIURL: process.env.REACT_APP_API_BASE_URL,
-    TenantId: process.env.REACT_APP_TENANT_ID,
-    ClientId: process.env.REACT_APP_CLIENT_ID,
-    RedirectUri: process.env.REACT_APP_REDIRECTURI,
-    CommonWindowType: process.env.REACT_APP_LOGIN_WINDOW_TYPE,
-    Scopes: process.env["REACT_APP_SCOPES"]?.split(",") as Array<string>,
+  const appOptions: AppOptions = {
+    Version: import.meta.env.VITE_VERSION,
+    Environment: import.meta.env.VITE_ENV,
+    APIURL: import.meta.env.VITE_API_BASE_URL,
+    TenantId: import.meta.env.VITE_TENANT_ID,
+    ClientId: import.meta.env.VITE_CLIENT_ID,
+    RedirectUri: import.meta.env.VITE_REDIRECT_URI,
+    Scopes: (import.meta.env.VITE_SCOPES ?? "")
+      .split(",")
+      .map((scope) => scope.trim())
+      .filter(Boolean),
   };
 
   return appOptions;
