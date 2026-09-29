@@ -29,6 +29,14 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "overrides": {
+    "react-scripts": {
+      "@svgr/webpack": "^8.1.0"
+    },
+    "postcss-svgo": {
+      "svgo": "^2.8.4"
+    }
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
