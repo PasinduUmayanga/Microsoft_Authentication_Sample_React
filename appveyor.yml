@@ -22,6 +22,7 @@ environment:
 
 install:
   - ps: Install-Product node $env:nodejs_version
+  - ps: New-Item -ItemType Directory -Force -Path "$env:APPDATA\npm" | Out-Null
   - npm install --prefer-offline --no-audit
 
 test_script:
